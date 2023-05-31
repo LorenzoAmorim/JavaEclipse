@@ -29,11 +29,9 @@ public class Program {
 		y.c = sc.nextDouble();
 		
 		
-		double p = (x.a + x.b + x.c)/ 2;
-		double areaX = Math.sqrt(p*(p-x.a)*(p-x.b)*(p-x.c));
-		
-		p = (y.a + y.b + y.c)/2;
-		double areaY = Math.sqrt(p*(p-y.a)*(p-y.b)*(p-y.c));
+		//a variável areaX recebe o objeto "x.area" da classe triangle
+		double areaX = x.area();
+		double areaY = y.area();
 		
 		System.out.printf("Triangle X area: %.4f%n", areaX);
 		System.out.printf("triangle Y area: %.4f%n", areaY);
